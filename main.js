@@ -1,5 +1,6 @@
 let userName = document.querySelector(".user-name")
-
+let userImage = document.querySelector(".user-image")
+let userDetails = document.querySelector(".user-details")
 findUser = ()=>{
     let usernameValue = document.getElementById("usernameVal").value;
     let url = `https://api.github.com/users/${usernameValue}`
@@ -17,4 +18,6 @@ findUser = ()=>{
 calculateScore = (val)=>{
     console.log("valeu", val)
     userName.innerHTML = val.name
+    userImage.src = val.avatar_url
+    userDetails.style.display = "inline-block"
 }

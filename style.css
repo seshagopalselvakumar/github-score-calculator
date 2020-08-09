@@ -7,3 +7,11 @@ body{
 .form-main{
     padding: 1em;
 }
+
+.user-details{
+    display: none;
+}
+
+.user-image{
+    width: 50%;
+}
