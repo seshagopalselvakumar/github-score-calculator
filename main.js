@@ -9,6 +9,9 @@ findUser = ()=>{
                 calculateScore(value)
             })
         })
+        .catch((error)=>{
+            console.log("error", error)
+        })
 }
 
 calculateScore = (val)=>{
